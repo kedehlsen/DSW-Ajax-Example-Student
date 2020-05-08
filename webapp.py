@@ -9,7 +9,7 @@ app.debug = True #Change this to False for production
 def home():
     return render_template('home.html')
 
-@app.route('')
+@app.route('/hidden-message')
 def hidden_message():
     return render_template('home.html')
 
