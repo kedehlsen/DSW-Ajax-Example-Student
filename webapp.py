@@ -11,6 +11,6 @@ def home():
 
 @app.route('/hidden-message')
 def hidden_message():
-    return Markup('<p>This is the hidden message!</p> <h2>This is a new title</h2>')
+    return Markup('<p>This is the hidden message!</p>')
 if __name__ == '__main__':
     app.run()
