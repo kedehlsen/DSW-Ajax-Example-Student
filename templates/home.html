@@ -12,8 +12,7 @@
      <script>
         $(document).ready(function(){
           $("button").click(function(){
-            var str = $("#myInput").val();
-            $("#div1").load("/hidden-message" + str);
+            $("#div1").load("/hidden-message");
           });
         });
      </script>
@@ -25,7 +24,6 @@
       <p>The contents of this div will be replaced with new content form the server.</p>
     </div>
     
-    <input type="text" id="myInput">
     <button>Update div 1</button>
    
    <div id="div2">
