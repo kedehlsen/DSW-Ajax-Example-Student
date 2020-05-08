@@ -9,5 +9,9 @@ app.debug = True #Change this to False for production
 def home():
     return render_template('home.html')
 
+@app.route('')
+def hidden_message():
+    return render_template('home.html')
+
 if __name__ == '__main__':
     app.run()
